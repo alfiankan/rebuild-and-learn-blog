@@ -34,7 +34,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          path: '../docs',
+          path: '../series',
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           sidebarPath: './sidebars.ts',
