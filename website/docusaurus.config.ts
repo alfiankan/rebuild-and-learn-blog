@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/docusaurus-social-card.jpg',
 
   // Set the production url of your site here
-  url: 'https://rebuild-and-learn.vercell.app',
+  url: 'https://rebuild-and-learn.pages.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
