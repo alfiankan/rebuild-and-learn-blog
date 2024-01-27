@@ -17,3 +17,30 @@ in the future i hope i can learn and write my experience doing this habbit (rebu
 2. search engine (like elastic search or meillisearch) [PLANNED]
 3. container system [PLANNED]
 4. .etc
+
+
+## PLAN :
+
+- persiapan awal (1)
+- membuat repl (1)
+- memahami page file system (1)
+- membuat struktur page (1)
+- membuat data permanen (1)
+- membuat lexer sederhana (2)
+- membuat struktur dan desain sistem database (2)
+- operasi insert (2)
+- operasi read (2)
+- operasi update (3)
+- operasi delete (3)
+- Balancing tree (4)
+- balancing tree permanen (4)
+- membuat index dengan btree (5)
+- table index (5)
+- cluster index
+- operasi join
+- menambahkan fungsi matematika
+- defragmentasi
+- database server
+- database client
+- mvcc
+

@@ -29,6 +29,11 @@ const config: Config = {
     locales: ['id'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',
@@ -121,7 +126,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyleft © ${new Date().getFullYear()} Rebuild and Learn - go learn and have fun.`,
+      copyright: `Copyleft © ${new Date().getFullYear()} by github.com/alfiankan Rebuild and Learn - go learn and have fun.`,
     },
     prism: {
       theme: prismThemes.github,

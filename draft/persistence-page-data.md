@@ -1,8 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 
-# hello guys
+# Membuat data permanent 1
+
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
