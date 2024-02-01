@@ -24,7 +24,7 @@ namun difunakan untuk pembelajaran baik bagi penulis dan pembaca dari keilmuan c
 graph TD
 start[start]
 
-p1[1. pendahuluan] --> int[1.1 intermezo] --> p1b[1.2 Manipulasi Page dan Block Sederhana] --> p1c[1.3 setup project & repl]
+p1[1. Data Storage] --> int[1.1 Block & Page] --> p1b[1.2 Manipulasi Page dan Block Sederhana] --> p1c[1.3 setup project & repl]
 
 phase1[2. Storage Engine] --> p1e1[2.1 Page & Atomic Buffer Pool] --> p1e2[2.2 Storage Design] --> p1e3[2.3 Manipulasi Data] 
 
