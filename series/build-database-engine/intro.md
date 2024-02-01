@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Pendahuluan & Roadmap
+# Pendahuluan & Roadmap Membangun Database Engine
 
 Halo guys pada series pertama ini kita akan coba membangun sebuat database engine yang memiliki fungsi
 seperti database database yang sering kita pakai sehari hari seperti mysql, postgree, sqlite, untuk note
@@ -24,25 +24,28 @@ namun difunakan untuk pembelajaran baik bagi penulis dan pembaca dari keilmuan c
 graph TD
 start[start]
 
-phase1[understading] --> p1a[Block dan Page] --> p1b[Manipulasi Page dan Block] --> p1c[Membuat data persistent]
-phase1[understading] --> p1d[Memahami Balancing Tree]
+p1[1. pendahuluan] --> int[1.1 intermezo] --> p1b[1.2 Manipulasi Page dan Block Sederhana] --> p1c[1.3 setup project & repl]
 
-phase2[membangun engine] --> p2a[Desain sistem] --> p2b[REPL] --> p2c[Storage Engine] --> p2d[Operasi SELECT] --> p2e[Operasi UPDATE] --> p2f[Operasi DELETE]
-
-phase3[membangun sistem index] --> p3a[btree page and block] --> p3b[table index] --> p3c[SELECT dengan index]
-
-phase4[phase 4] --> p4a[create table command] --> p4b[drop table] --> p4c[db server] --> p4d[db client]
-phase5[extra] --> p5c[JOIN operation] --> p5a[mvcc] --> p5b[vacuum]
+phase1[2. Storage Engine] --> p1e1[2.1 Page & Atomic Buffer Pool] --> p1e2[2.2 Storage Design] --> p1e3[2.3 Manipulasi Data] 
 
 
+p1e3 --> p1e5[2.4 LRU & Clock] --> p1e6[2.5 Background Writer]
+
+phase2[3. Indexing] --> p2e1[3.1 Intermezo] --> p2e2[3.2 Simple HashMap Index] --> p2e3[3.3 B+Tree Index] --> p2e4[3.4 Multi Index]
+
+p2e4 --> phase3[4. Fungsi & Operasi] --> p3e1[4.1 Indexed ORDER & SUM]
+
+phase4[5. Multi Table] --> p4e1[5.1 Operasi Create Table] --> p4e2[5.2 operasi JOIN]
+
+additional[6. Additional] --> add1[6.1 Server & Client] --> add2[another topic later...]
+
+start --> p1
 start --> phase1
 start --> phase2
-start --> phase3
+start --> phase4
+start --> additional
 
-p2f --> phase4
-p3c --> phase4
 
-phase4 --> phase5
 
 ```
 

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-import GiscusComponent from '../../website/src/components/GiscusComponent';
+import GiscusComponent from '../../../website/src/components/GiscusComponent';
 
 
 # Bagaimana Database Engine Bekerja

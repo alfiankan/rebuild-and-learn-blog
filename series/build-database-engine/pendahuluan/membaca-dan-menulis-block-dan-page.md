@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 ---
-import GiscusComponent from '../../website/src/components/GiscusComponent';
+import GiscusComponent from '../../../website/src/components/GiscusComponent';
 
 # Memanipulasi Page dan Block Sederhana
 
