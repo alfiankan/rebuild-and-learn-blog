@@ -15,7 +15,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'alfiankan', // Usually your GitHub org/user name.
+  organizationName: 'rebuild-and-learn', // Usually your GitHub org/user name.
   projectName: 'rebuild-and-learn-blog', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -51,7 +51,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/alfiankan/rebuild-and-learn-blog',
+            'https://github.com/rebuild-and-learn/rebuild-and-learn-blog',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -92,14 +92,14 @@ const config: Config = {
           ],
         },
         {
-          href: 'https://github.com/alfiankan/rebuild-and-learn-blog',
+          href: 'https://github.com/rebuild-and-learn/rebuild-and-learn-blog',
           label: 'GitHub',
           position: 'right',
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Series',
@@ -115,16 +115,12 @@ const config: Config = {
           items: [
             {
               label: 'Github',
-              href: 'https://github.com/alfiankan/rebuild-and-learn-blog',
-            },
-            {
-              label: 'Medium',
-              href: 'https://alfiankan.medium.com',
+              href: 'https://github.com/rebuild-and-learn/rebuild-and-learn-blog',
             },
           ],
         },
       ],
-      copyright: `Copyleft © ${new Date().getFullYear()} by github.com/alfiankan Rebuild and Learn - go learn and have fun.`,
+      copyright: `Copyleft © ${new Date().getFullYear()} by Rebuild and Learn - go learn and have fun.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -1,0 +1,8 @@
+{
+  "label": "Pager dan Buffer",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Kita akan mencoba memahami bagaimana kita meniru Sistem Operasi dalam mengelola storage, sebagai pondasi awal database engine."
+  }
+}

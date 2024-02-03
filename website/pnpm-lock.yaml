@@ -32,6 +32,9 @@ dependencies:
   '@giscus/react':
     specifier: ^2.4.0
     version: 2.4.0(react-dom@18.2.0)(react@18.2.0)
+  '@ilihub/decimal-to-binary':
+    specifier: ^1.0.7
+    version: 1.0.7
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.0(@types/react@18.2.48)(react@18.2.0)
@@ -2402,6 +2405,10 @@ packages:
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
     dependencies:
       '@hapi/hoek': 9.3.0
+
+  /@ilihub/decimal-to-binary@1.0.7:
+    resolution: {integrity: sha512-GPAYfWaUzRv98o/yGsaW3HczlgJt2AGCkf+BSYfLl0AIssBYUCl4OUaBJKBDVFlqVvSzb1VQ7gVtOJTB4wqUNQ==}
+    dev: false
 
   /@jest/schemas@29.6.3:
     resolution: {integrity: sha512-mo5j5X+jIZmJQveBKeS/clAueipV7KgiX1vMgCxam1RNYiqE1w62n0/tJJnHtjW8ZHcQco5gY85jA3mi0L+nSA==}
