@@ -256,7 +256,7 @@ mempermudah percobaan pertama ini kita gunakan ukuran yang pasti yaitu sebesar `
      |--------  |total row (8 bytes)|
      |          |100 bytes          |
      |          |100 bytes          |
-    4KB         |100 bytes          |
+    1KB         |100 bytes          |
      |          |100 bytes          |
      |          |100 bytes          |
      |          |100 bytes          |
@@ -268,7 +268,7 @@ mempermudah percobaan pertama ini kita gunakan ukuran yang pasti yaitu sebesar `
      |--------  |total row (8 bytes)|
      |          |100 bytes          |
      |          |100 bytes          |
-    4KB         |100 bytes          |
+    1KB         |100 bytes          |
      |          |100 bytes          |
      |          |100 bytes          |
      |          |100 bytes          |
@@ -280,7 +280,7 @@ mempermudah percobaan pertama ini kita gunakan ukuran yang pasti yaitu sebesar `
      |--------  |total row (8 bytes)|
      |          |100 bytes          |
      |          |100 bytes          |
-    4KB         |100 bytes          |
+    1KB         |100 bytes          |
      |          |100 bytes          |
      |          |100 bytes          |
      |          |100 bytes          |
