@@ -826,3 +826,4 @@ So sampai jumpa di bagian ke-2 dari Series `Membangun Database Engine`.
 
 > Contributors
 - [alfiankan](https://github.com/alfiankan)
+- [Lori](https://github.com/chud-lori)
