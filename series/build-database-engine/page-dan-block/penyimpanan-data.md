@@ -265,6 +265,9 @@ akan menggunakan fixed size.
   </TabItem>
   <TabItem value="c" label="C">
     ```c showLineNumbers
+	#define PAGE_SIZE 1024 // 1kb
+	#define MAX_TUPLE_SIZE 100 // 100bytes
+	#define PAGE_HEADER_SIZE 8 // for uint64
     ```
   </TabItem>
 </Tabs>
