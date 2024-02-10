@@ -212,6 +212,33 @@ Untuk Source Code lengkap dari tulisan ini dapat pembaca kunjungi pada link beri
   </TabItem>
   <TabItem value="c" label="C">
     ```c showLineNumbers
+	unsigned char* readFD(int fd, off_t offset, size_t limit){
+		unsigned char *byteData = malloc(limit);
+		if (byteData == NULL) {
+			perror("Failed allocating memory");
+			free(byteData);
+			return NULL;
+		}
+
+		if (lseek(fd, offset, SEEK_CUR) == -1) {
+			perror("failed seeking file");
+			free(byteData);
+			return NULL;
+		}
+
+		if (read(fd, byteData, sizeof(byteData)) == -1) {
+			perror("failed reading file");
+			free(byteData);
+			return NULL;
+		}
+
+		if (lseek(fd, offset, SEEK_SET) == -1) {
+			perror("error seeking file");
+			free(byteData);
+			return NULL;
+		}
+		return byteData;
+	}
     ```
   </TabItem>
 </Tabs>
