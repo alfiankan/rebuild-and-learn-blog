@@ -417,9 +417,6 @@ Untuk Source Code lengkap dari tulisan ini dapat pembaca kunjungi pada link beri
 
 
 	pager newPager(char* blockPath) {
-		//printf("blockpath %s", blockPath);
-		int fd  = open(blockPath, O_CREAT|O_DIRECT|O_RDWR, 0664);
-		pager pager;
 
 
 		if (fd == -1) {
@@ -436,44 +433,29 @@ Untuk Source Code lengkap dari tulisan ini dapat pembaca kunjungi pada link beri
 
 
 	unsigned char* readFD(int fd, off_t offset, size_t limit){
-		// fd file descriptor
-		// limit is pagesize
-		// offset is page using off_t for signed int to represent file sizes
 
-		// allocate memory for the size of the limit
 		unsigned char *byteData = malloc(limit);
 		if (byteData == NULL) {
 			perror("Failed allocating memory");
 			free(byteData);
-			//close(fd);
-			//exit(EXIT_FAILURE);
 			return NULL;
 		}
 
-		// file pointer relative to its current position
 		if (lseek(fd, offset, SEEK_CUR) == -1) {
 			perror("failed seeking file");
 			free(byteData);
-			//close(fd);
-			//exit(EXIT_FAILURE);
 			return NULL;
 		}
 
-		// read file
 		if (read(fd, byteData, sizeof(byteData)) == -1) {
 			perror("failed reading file");
 			free(byteData);
-		// close(fd);
-			//exit(EXIT_FAILURE);
 			return NULL;
 		}
 
-		//  set the file pointer to an absolute position in the file
 		if (lseek(fd, offset, SEEK_SET) == -1) {
 			perror("error seeking file");
 			free(byteData);
-			//close(fd);
-			//exit(EXIT_FAILURE);
 			return NULL;
 		}
 		return byteData;
